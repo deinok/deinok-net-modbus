@@ -4,8 +4,4 @@
 		<TargetFramework>net7.0</TargetFramework>
 	</PropertyGroup>
 
-	<ItemGroup>
-		<ProjectReference Include="..\Deinok.Net.Modbus\Deinok.Net.Modbus.csproj" />
-	</ItemGroup>
-
 </Project>

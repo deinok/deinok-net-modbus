@@ -29,6 +29,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{
 		.github\workflows\main.yml = .github\workflows\main.yml
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Deinok.Net.Modbus", "src\Deinok.Net.Modbus\Deinok.Net.Modbus.csproj", "{2CD6860A-44CF-4386-A67A-A1221AF8BD87}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{6A8E426B-7C81-4D24-9684-D2947272302B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A8E426B-7C81-4D24-9684-D2947272302B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A8E426B-7C81-4D24-9684-D2947272302B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CD6860A-44CF-4386-A67A-A1221AF8BD87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CD6860A-44CF-4386-A67A-A1221AF8BD87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CD6860A-44CF-4386-A67A-A1221AF8BD87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CD6860A-44CF-4386-A67A-A1221AF8BD87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +52,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{6A8E426B-7C81-4D24-9684-D2947272302B} = {63B14FA8-1F1B-432F-A8E1-52020DB2B33F}
 		{079E3672-3944-4DF2-BB14-4AF185B38406} = {4F701352-740E-4C48-8B8C-8FDF009C67F5}
+		{2CD6860A-44CF-4386-A67A-A1221AF8BD87} = {63B14FA8-1F1B-432F-A8E1-52020DB2B33F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {934A3156-0436-48F5-A9D7-5F7AD15EF61D}
