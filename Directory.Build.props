@@ -1,0 +1,14 @@
+<Project>
+
+	<PropertyGroup>
+		<LangVersion>11.0</LangVersion>
+		<NoWarn></NoWarn>
+		<Nullable>annotations</Nullable>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<RepositoryUrl>https://github.com/deinok/deinok-net-modbus</RepositoryUrl>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<Version>0.1.0</Version>
+	</PropertyGroup>
+
+</Project>
