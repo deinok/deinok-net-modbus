@@ -1,5 +1,6 @@
 {
-   "features": {
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "features": {
     "ghcr.io/devcontainers/features/dotnet:1": {}
   },
   "image": "mcr.microsoft.com/devcontainers/universal:2"
