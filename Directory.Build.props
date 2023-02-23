@@ -1,9 +1,10 @@
 <Project>
 
 	<PropertyGroup>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<LangVersion>11.0</LangVersion>
-		<NoWarn></NoWarn>
-		<Nullable>annotations</Nullable>
+		<NoWarn>CS1591</NoWarn>
+		<Nullable>enable</Nullable>
 		<PublishRepositoryUrl>true</PublishRepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<RepositoryUrl>https://github.com/deinok/deinok-net-modbus</RepositoryUrl>
