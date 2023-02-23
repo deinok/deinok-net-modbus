@@ -7,12 +7,13 @@ jobs:
       with:
         global-json-file: "global.json"
     - run: "dotnet tool restore"
-    - run: "dotnet format --verify-no-changes"
     - run: "dotnet restore"
     - run: "dotnet build --configuration Debug"
     - run: "dotnet build --configuration Release"
+    - run: "dotnet format --verify-no-changes"
     - run: "dotnet test --configuration Debug"
     - run: "dotnet test --configuration Release"
+name: "main"
 on:
   push:
     branches: [ 
