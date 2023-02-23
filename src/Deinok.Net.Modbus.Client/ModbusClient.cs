@@ -1,8 +1,9 @@
 ﻿namespace Deinok.Net.Modbus.Client
 {
 
-    public class ModbusClient
+    public class ModbusClient : ModbusMessageInvoker
     {
+
     }
 
 }
