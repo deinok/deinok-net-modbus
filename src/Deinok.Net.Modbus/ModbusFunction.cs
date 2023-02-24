@@ -1,7 +1,7 @@
 ﻿namespace Deinok.Net.Modbus
 {
 
-    public record ModbusResponse
+    public enum ModbusFunction : byte
     {
     }
 

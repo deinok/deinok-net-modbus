@@ -3,14 +3,14 @@
 namespace Deinok.Net.Modbus
 {
 
-    public record ModbusRequest
+    public record ModbusMessage
     {
 
         public required byte Address { get; init; }
 
         public required ImmutableArray<byte> Data { get; init; }
 
-        public required byte Function { get; init; }
+        public required ModbusFunction Function { get; init; }
 
     }
 
