@@ -1,6 +1,6 @@
 jobs:
   build:
-    runs-on: "ubuntu-latest"
+    runs-on: "${{ matrix.runs-on }}"
     steps:
     - uses: "actions/checkout@v3"
     - uses: "actions/setup-dotnet@v3"
@@ -8,11 +8,20 @@ jobs:
         global-json-file: "global.json"
     - run: "dotnet tool restore"
     - run: "dotnet restore"
-    - run: "dotnet build --configuration Debug"
-    - run: "dotnet build --configuration Release"
+    - run: "dotnet build --configuration ${{ matrix.configuration }}"
     - run: "dotnet format --verify-no-changes"
-    - run: "dotnet test --configuration Debug"
-    - run: "dotnet test --configuration Release"
+    - run: "dotnet test --configuration ${{ matrix.configuration }}"
+    strategy:
+      matrix:
+        configuration: [
+          "Debug",
+          "Release"
+        ]
+        runs-on: [
+          "macos-latest", 
+          "ubuntu-latest", 
+          "windows-latest"
+        ]
 name: "main"
 on:
   push:
