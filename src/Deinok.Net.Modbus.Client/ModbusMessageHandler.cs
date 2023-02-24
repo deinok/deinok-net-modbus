@@ -1,22 +1,24 @@
 ﻿using System;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Deinok.Net.Modbus.Client
 {
 
-    public abstract class ModbusMessageHandler : IAsyncDisposable, IDisposable
+    public abstract class ModbusMessageHandler : IDisposable
     {
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            this.Dispose(true);
+            GC.SuppressFinalize(this);
         }
 
-        public async ValueTask DisposeAsync()
-        {
-            await Task.CompletedTask.ConfigureAwait(false);
-            throw new NotImplementedException();
-        }
+        protected virtual void Dispose(bool disposing) { }
+
+        public abstract ModbusMessage Send(ModbusMessage request);
+
+        public abstract Task<ModbusMessage> SendAsync(ModbusMessage request, CancellationToken cancellationToken = default);
 
     }
 
