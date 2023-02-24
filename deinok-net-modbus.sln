@@ -33,6 +33,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Deinok.Net.Modbus", "src\De
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Deinok.Net.Modbus.Server", "src\Deinok.Net.Modbus.Server\Deinok.Net.Modbus.Server.csproj", "{610C38B0-C2FE-4B00-8341-8506811F488D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{28418668-5DBD-4C92-A822-BF2D8A7B791D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deinok.Net.Modbus.Tests", "tests\Deinok.Net.Modbus.Tests\Deinok.Net.Modbus.Tests.csproj", "{335FAFB2-608F-467B-B58E-D0AF9F48DC9F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Deinok.Net.Modbus.Client.Tests", "tests\Deinok.Net.Modbus.Client.Tests\Deinok.Net.Modbus.Client.Tests.csproj", "{960801A6-D030-4A03-9258-8B56BE725419}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Deinok.Net.Modbus.Server.Tests", "tests\Deinok.Net.Modbus.Server.Tests\Deinok.Net.Modbus.Server.Tests.csproj", "{43BA533B-05BC-4120-9FFB-32C35070E652}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +59,18 @@ Global
 		{610C38B0-C2FE-4B00-8341-8506811F488D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{610C38B0-C2FE-4B00-8341-8506811F488D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{610C38B0-C2FE-4B00-8341-8506811F488D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{335FAFB2-608F-467B-B58E-D0AF9F48DC9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{335FAFB2-608F-467B-B58E-D0AF9F48DC9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{335FAFB2-608F-467B-B58E-D0AF9F48DC9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{335FAFB2-608F-467B-B58E-D0AF9F48DC9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{960801A6-D030-4A03-9258-8B56BE725419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{960801A6-D030-4A03-9258-8B56BE725419}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{960801A6-D030-4A03-9258-8B56BE725419}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{960801A6-D030-4A03-9258-8B56BE725419}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43BA533B-05BC-4120-9FFB-32C35070E652}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43BA533B-05BC-4120-9FFB-32C35070E652}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43BA533B-05BC-4120-9FFB-32C35070E652}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43BA533B-05BC-4120-9FFB-32C35070E652}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +80,9 @@ Global
 		{079E3672-3944-4DF2-BB14-4AF185B38406} = {4F701352-740E-4C48-8B8C-8FDF009C67F5}
 		{2CD6860A-44CF-4386-A67A-A1221AF8BD87} = {63B14FA8-1F1B-432F-A8E1-52020DB2B33F}
 		{610C38B0-C2FE-4B00-8341-8506811F488D} = {63B14FA8-1F1B-432F-A8E1-52020DB2B33F}
+		{335FAFB2-608F-467B-B58E-D0AF9F48DC9F} = {28418668-5DBD-4C92-A822-BF2D8A7B791D}
+		{960801A6-D030-4A03-9258-8B56BE725419} = {28418668-5DBD-4C92-A822-BF2D8A7B791D}
+		{43BA533B-05BC-4120-9FFB-32C35070E652} = {28418668-5DBD-4C92-A822-BF2D8A7B791D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {934A3156-0436-48F5-A9D7-5F7AD15EF61D}
