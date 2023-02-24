@@ -18,4 +18,8 @@
 		<ProjectReference Include="..\..\src\Deinok.Net.Modbus\Deinok.Net.Modbus.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+		<Content CopyToOutputDirectory="PreserveNewest" Include="xunit.runner.json" />
+	</ItemGroup>
+
 </Project>
