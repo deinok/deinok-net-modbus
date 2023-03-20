@@ -7,6 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 		Directory.Build.props = Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
 		global.json = global.json
 		LICENSE.txt = LICENSE.txt
 		nuget.config = nuget.config
@@ -35,7 +36,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Deinok.Net.Modbus.Server", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{28418668-5DBD-4C92-A822-BF2D8A7B791D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deinok.Net.Modbus.Tests", "tests\Deinok.Net.Modbus.Tests\Deinok.Net.Modbus.Tests.csproj", "{335FAFB2-608F-467B-B58E-D0AF9F48DC9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Deinok.Net.Modbus.Tests", "tests\Deinok.Net.Modbus.Tests\Deinok.Net.Modbus.Tests.csproj", "{335FAFB2-608F-467B-B58E-D0AF9F48DC9F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Deinok.Net.Modbus.Client.Tests", "tests\Deinok.Net.Modbus.Client.Tests\Deinok.Net.Modbus.Client.Tests.csproj", "{960801A6-D030-4A03-9258-8B56BE725419}"
 EndProject
