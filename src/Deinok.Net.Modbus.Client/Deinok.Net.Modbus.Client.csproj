@@ -1,8 +1,12 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFramework>net7.0</TargetFramework>
 	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="System.IO.Ports" />
+	</ItemGroup>
 
 	<ItemGroup>
 		<ProjectReference Include="..\Deinok.Net.Modbus\Deinok.Net.Modbus.csproj" />
