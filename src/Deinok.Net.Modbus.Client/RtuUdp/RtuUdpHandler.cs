@@ -24,12 +24,12 @@ namespace Deinok.Net.Modbus.Client.RtuUdp
             }
         }
 
-        public override ModbusMessage Send(ModbusMessage request)
+        public override ModbusMessage Send(ModbusMessage modbusMessage)
         {
             throw new NotImplementedException();
         }
 
-        public override async Task<ModbusMessage> SendAsync(ModbusMessage request, CancellationToken cancellationToken = default)
+        public override async Task<ModbusMessage> SendAsync(ModbusMessage modbusMessage, CancellationToken cancellationToken = default)
         {
             await Task.CompletedTask.ConfigureAwait(false);
             throw new NotImplementedException();
