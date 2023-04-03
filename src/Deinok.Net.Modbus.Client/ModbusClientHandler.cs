@@ -1,4 +1,5 @@
-﻿using System.Threading;
+﻿using System;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Deinok.Net.Modbus.Client
@@ -7,13 +8,15 @@ namespace Deinok.Net.Modbus.Client
     public class ModbusClientHandler : ModbusMessageHandler
     {
 
-        public override ModbusMessage Send(ModbusMessage request)
+        public override ModbusMessage Send(ModbusMessage modbusMessage)
         {
+            ArgumentNullException.ThrowIfNull(modbusMessage, nameof(modbusMessage));
             throw new System.NotImplementedException();
         }
 
-        public override async Task<ModbusMessage> SendAsync(ModbusMessage request, CancellationToken cancellationToken = default)
+        public override async Task<ModbusMessage> SendAsync(ModbusMessage modbusMessage, CancellationToken cancellationToken = default)
         {
+            ArgumentNullException.ThrowIfNull(modbusMessage, nameof(modbusMessage));
             await Task.CompletedTask.ConfigureAwait(false);
             throw new System.NotImplementedException();
         }

@@ -13,6 +13,7 @@ namespace Deinok.Net.Modbus.Client
 
         public ModbusMessageInvoker(ModbusMessageHandler modbusMessageHandler, bool disposeHandler = true)
         {
+            ArgumentNullException.ThrowIfNull(modbusMessageHandler, nameof(modbusMessageHandler));
             this.modbusMessageHandler = modbusMessageHandler;
             this.disposeHandler = disposeHandler;
         }
@@ -33,11 +34,13 @@ namespace Deinok.Net.Modbus.Client
 
         public ModbusMessage Send(ModbusMessage modbusMessage)
         {
+            ArgumentNullException.ThrowIfNull(modbusMessage, nameof(modbusMessage));
             return this.modbusMessageHandler.Send(modbusMessage);
         }
 
         public async Task<ModbusMessage> SendAsync(ModbusMessage modbusMessage, CancellationToken cancellationToken = default)
         {
+            ArgumentNullException.ThrowIfNull(modbusMessage, nameof(modbusMessage));
             return await this.modbusMessageHandler.SendAsync(modbusMessage, cancellationToken).ConfigureAwait(false);
         }
 
