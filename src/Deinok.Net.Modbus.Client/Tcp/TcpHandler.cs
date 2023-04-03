@@ -17,6 +17,7 @@ namespace Deinok.Net.Modbus.Client.Tcp
 
         public TcpHandler(TcpClient tcpClient)
         {
+            ArgumentNullException.ThrowIfNull(tcpClient, nameof(tcpClient));
             this.tcpClient = tcpClient;
         }
 
@@ -30,6 +31,7 @@ namespace Deinok.Net.Modbus.Client.Tcp
 
         public override ModbusMessage Send(ModbusMessage modbusMessage)
         {
+            ArgumentNullException.ThrowIfNull(modbusMessage, nameof(modbusMessage));
             var networkStream = this.tcpClient.GetStream();
 
             var writeBufferHeader = ArrayPool<byte>.Shared.Rent(6);
@@ -91,6 +93,7 @@ namespace Deinok.Net.Modbus.Client.Tcp
 
         public override async Task<ModbusMessage> SendAsync(ModbusMessage modbusMessage, CancellationToken cancellationToken = default)
         {
+            ArgumentNullException.ThrowIfNull(modbusMessage, nameof(modbusMessage));
             var networkStream = this.tcpClient.GetStream();
 
             var writeBufferHeader = ArrayPool<byte>.Shared.Rent(6);

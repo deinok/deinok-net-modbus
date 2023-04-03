@@ -13,6 +13,7 @@ namespace Deinok.Net.Modbus.Client.RtuUdp
 
         public RtuUdpHandler(UdpClient udpClient)
         {
+            ArgumentNullException.ThrowIfNull(udpClient, nameof(udpClient));
             this.udpClient = udpClient;
         }
 
@@ -26,11 +27,13 @@ namespace Deinok.Net.Modbus.Client.RtuUdp
 
         public override ModbusMessage Send(ModbusMessage modbusMessage)
         {
+            ArgumentNullException.ThrowIfNull(modbusMessage, nameof(modbusMessage));
             throw new NotImplementedException();
         }
 
         public override async Task<ModbusMessage> SendAsync(ModbusMessage modbusMessage, CancellationToken cancellationToken = default)
         {
+            ArgumentNullException.ThrowIfNull(modbusMessage, nameof(modbusMessage));
             await Task.CompletedTask.ConfigureAwait(false);
             throw new NotImplementedException();
         }

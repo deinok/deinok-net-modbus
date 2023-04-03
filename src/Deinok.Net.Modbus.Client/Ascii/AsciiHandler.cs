@@ -13,6 +13,7 @@ namespace Deinok.Net.Modbus.Client.Ascii
 
         public AsciiHandler(SerialPort serialPort)
         {
+            ArgumentNullException.ThrowIfNull(serialPort, nameof(serialPort));
             this.serialPort = serialPort;
         }
 
@@ -26,11 +27,13 @@ namespace Deinok.Net.Modbus.Client.Ascii
 
         public override ModbusMessage Send(ModbusMessage modbusMessage)
         {
+            ArgumentNullException.ThrowIfNull(modbusMessage, nameof(modbusMessage));
             throw new NotImplementedException();
         }
 
         public override async Task<ModbusMessage> SendAsync(ModbusMessage modbusMessage, CancellationToken cancellationToken = default)
         {
+            ArgumentNullException.ThrowIfNull(modbusMessage, nameof(modbusMessage));
             await Task.CompletedTask.ConfigureAwait(false);
             throw new NotImplementedException();
         }
