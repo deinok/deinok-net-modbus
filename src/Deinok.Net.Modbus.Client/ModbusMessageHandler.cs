@@ -16,8 +16,6 @@ namespace Deinok.Net.Modbus.Client
 
         protected virtual void Dispose(bool disposing) { }
 
-        public abstract ModbusMessage Send(ModbusMessage modbusMessage);
-
         public abstract Task<ModbusMessage> SendAsync(ModbusMessage modbusMessage, CancellationToken cancellationToken = default);
 
     }
