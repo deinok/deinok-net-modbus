@@ -10,7 +10,7 @@ namespace Deinok.Net.Modbus.Client.Tests
     {
 
         [Fact(Skip = "Skip")]
-        public void Test1()
+        public async void Test1()
         {
             var tcpClient = new TcpClient("localhost", 502);
             var tcpHandler = new TcpHandler(tcpClient);
@@ -20,7 +20,7 @@ namespace Deinok.Net.Modbus.Client.Tests
                 Data = new byte[] { 0x00, 0x00, 0x00, 0x0A }.ToImmutableArray(),
                 Function = ModbusFunction.ReadMultipleHoldingRegisters,
             };
-            var modbusMessageResponse = tcpHandler.Send(modbusMessageRequest);
+            var modbusMessageResponse = await tcpHandler.SendAsync(modbusMessageRequest);
         }
 
     }

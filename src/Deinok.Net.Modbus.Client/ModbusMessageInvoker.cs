@@ -32,12 +32,6 @@ namespace Deinok.Net.Modbus.Client
             }
         }
 
-        public ModbusMessage Send(ModbusMessage modbusMessage)
-        {
-            ArgumentNullException.ThrowIfNull(modbusMessage, nameof(modbusMessage));
-            return this.modbusMessageHandler.Send(modbusMessage);
-        }
-
         public async Task<ModbusMessage> SendAsync(ModbusMessage modbusMessage, CancellationToken cancellationToken = default)
         {
             ArgumentNullException.ThrowIfNull(modbusMessage, nameof(modbusMessage));

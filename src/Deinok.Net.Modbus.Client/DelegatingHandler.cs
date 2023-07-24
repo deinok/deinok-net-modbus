@@ -25,12 +25,6 @@ namespace Deinok.Net.Modbus.Client
             base.Dispose(disposing);
         }
 
-        public override ModbusMessage Send(ModbusMessage modbusMessage)
-        {
-            ArgumentNullException.ThrowIfNull(modbusMessage, nameof(modbusMessage));
-            return this.InnerHandler.Send(modbusMessage);
-        }
-
         public override async Task<ModbusMessage> SendAsync(ModbusMessage modbusMessage, CancellationToken cancellationToken = default)
         {
             ArgumentNullException.ThrowIfNull(modbusMessage, nameof(modbusMessage));
