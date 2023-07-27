@@ -71,11 +71,11 @@ namespace Deinok.Net.Modbus.Client.Tcp
                 var dataMemory = bodyMemory.Slice(2, length - 2);
                 var address = addressMemory.Span[0];
                 var functionCode = functionCodeMemory.Span[0];
-                var data = dataMemory.ToArray();
+                var data = dataMemory.Span.ToImmutableArray();
                 return new ModbusMessage
                 {
                     Address = address,
-                    Data = data.ToImmutableArray(),
+                    Data = data,
                     Function = (ModbusFunction)functionCode,
                 };
             }

@@ -29,7 +29,7 @@ namespace Deinok.Net.Modbus.Client
                 Data = writeMemory.Span.ToImmutableArray(),
                 Function = ModbusFunction.ReadMultipleHoldingRegisters,
             };
-            var modbusMessageResponse = await this.SendAsync(modbusMessageRequest, cancellationToken);
+            var modbusMessageResponse = await this.SendAsync(modbusMessageRequest, cancellationToken).ConfigureAwait(false);
             var dataMemory = modbusMessageResponse.Data.AsMemory();
             var dataBytesMemory = dataMemory.Slice(0, 1);
             var dataBytes = dataBytesMemory.Span[0];
