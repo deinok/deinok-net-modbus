@@ -15,13 +15,13 @@ namespace Deinok.Net.Modbus.Tests
             {
                 Address = 1,
                 Data = Array.Empty<byte>().ToImmutableArray(),
-                Function = ModbusFunction.ReadCoilStatus,
+                Function = ModbusFunction.ReadCoils,
             };
             var modbusMessage2 = new ModbusMessage
             {
                 Address = 1,
                 Data = Array.Empty<byte>().ToImmutableArray(),
-                Function = ModbusFunction.ReadCoilStatus,
+                Function = ModbusFunction.ReadCoils,
             };
             Assert.True(modbusMessage1 == modbusMessage2);
         }
