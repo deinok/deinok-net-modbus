@@ -3,7 +3,7 @@
 
     public enum ModbusFunction : byte
     {
-        ReadCoilStatus = 1,
+        ReadCoils = 1,
         ReadDiscreteInputs = 2,
         ReadMultipleHoldingRegisters = 3,
         ReadInputRegisters = 4,
